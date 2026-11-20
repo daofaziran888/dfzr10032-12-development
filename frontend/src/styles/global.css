@@ -42,3 +42,7 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .modal-field span{font-size:13px;color:var(--muted)}
 .modal-field input{padding:7px 10px;border:1px solid var(--border);border-radius:6px;font-size:13px}
 .modal-foot{display:flex;justify-content:flex-end;gap:8px;border-top:1px solid var(--border);padding:12px 18px}
+.warn-cell { color: #b45309; font-weight: 600; }
+.ok-text { color: #027a48; }
+.filter-item select { padding: 6px 8px; border: 1px solid var(--border); border-radius: 6px; font-size: 13px; }
+.hint-text { color: var(--muted); font-size: 12px; line-height: 1.6; margin: 0; }

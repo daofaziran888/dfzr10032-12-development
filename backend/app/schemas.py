@@ -149,6 +149,30 @@ class ScheduleEntry(BaseModel):
     field_6: str | None = None  # 失败策略
     field_7: str | None = None  # 计划状态
 
+class ScheduleBatchEntry(BaseModel):
+    """采集调度批次明细结构。"""
+
+    field_0: str | None = None  # 批次编号
+    field_1: str | None = None  # 计划编号
+    field_2: str | None = None  # 任务编号
+    field_3: str | None = None  # 调度周期
+    field_4: str | None = None  # 调度时段
+    field_5: str | None = None  # 依赖状态
+    field_6: str | None = None  # 预计可用时间
+    field_7: str | None = None  # 确认数据
+
+class FlowNodeEntry(BaseModel):
+    """流转执行节点明细结构。"""
+
+    field_0: str | None = None  # 节点编号
+    field_1: str | None = None  # 管道编号
+    field_2: str | None = None  # 批次编号
+    field_3: str | None = None  # 任务编号
+    field_4: str | None = None  # 调度时段
+    field_5: str | None = None  # 前置批次
+    field_6: str | None = None  # 依赖结果摘要
+    field_7: str | None = None  # 节点状态
+
 class MonitorEntry(BaseModel):
     """监控面板明细结构。"""
 
